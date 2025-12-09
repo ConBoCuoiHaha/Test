@@ -1,2 +1,3 @@
 com\example\school\SchoolApplication.class
 com\example\school\controller\WebController.class
+com\example\school\entity\User.class
