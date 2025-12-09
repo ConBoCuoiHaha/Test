@@ -1,0 +1,38 @@
+# --- Security / Bảo mật (Quan trọng) ---
+# Chứa biến môi trường, mật khẩu database... tuyệt đối không public
+.env
+.env.local
+.env.*
+*.secret
+
+# --- Build Output (Làm nặng Repo -> Cần loại bỏ) ---
+# Spring Boot / Maven build ra đây
+target/
+# Nếu dùng Gradle
+build/
+# Nếu dùng Eclipse
+bin/
+# Nếu dùng IntelliJ
+out/
+
+# --- IDE Config (Cấu hình riêng của máy cá nhân) ---
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+*.iml
+
+# --- Java & File thừa ---
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.zip
+*.rar
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db
