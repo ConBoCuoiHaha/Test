@@ -34,18 +34,4 @@ public class WebController {
     public String homePage() {
         return "home";
     }
-
-    // --- MỚI THÊM BỞI NGƯỜI B (Chức năng Đăng Ký) ---
-    @GetMapping("/register")
-    public String registerPage(Model model) {
-        model.addAttribute("user", new User());
-        return "register";
-    }
-
-    @PostMapping("/register")
-    public String doRegister(@ModelAttribute User user) {
-        System.out.println("Dang ky user moi: " + user.getUsername());
-        // Ở đây đáng lẽ phải lưu vào DB, nhưng tạm thời in ra log để test luồng
-        return "redirect:/login";
-    }
 }
