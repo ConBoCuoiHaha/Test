@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Mục - Trường Học Hạnh Phúc</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        .category-section {
+            margin-top: 2rem;
+        }
+
+        .category-title {
+            color: #4a90e2;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .list-group {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .list-item {
+            padding: 10px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        .badge {
+            background: #50e3c2;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="/home" class="nav-btn">← Quay lại Trang chủ</a>
+            <a href="/login" class="logout-btn">Đăng xuất</a>
+        </div>
+
+        <div class="hero-section" style="padding: 1rem 0;">
+            <h1 class="hero-title" style="font-size: 2.5rem;">Danh Mục Quản Lý</h1>
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-title">👨‍🏫 Danh sách Thầy, Cô giáo</h2>
+            <div class="list-group">
+                <p style="text-align: center; color: #888; padding: 1rem;">(Chưa có dữ liệu giáo viên)</p>
+                <!-- Ví dụ mẫu layout khi có data -->
+                <!-- 
+                <div class="list-item">
+                    <span>Nguyễn Văn A</span>
+                    <span class="badge">Toán</span>
+                </div> 
+                -->
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-title">🏫 Danh sách Lớp học</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <!-- Khối Lớp 10 -->
+                <div class="list-group">
+                    <h3 style="margin-bottom: 1rem; color: #667eea;">Khối 10</h3>
+                    <div class="list-item">10A1 <span class="badge">0 học sinh</span></div>
+                    <div class="list-item">10A2 <span class="badge">0 học sinh</span></div>
+                    <div class="list-item">10A3 <span class="badge">0 học sinh</span></div>
+                </div>
+
+                <!-- Khối Lớp 11 -->
+                <div class="list-group">
+                    <h3 style="margin-bottom: 1rem; color: #764ba2;">Khối 11</h3>
+                    <div class="list-item">11B1 <span class="badge">0 học sinh</span></div>
+                    <div class="list-item">11B2 <span class="badge">0 học sinh</span></div>
+                </div>
+
+                <!-- Khối Lớp 12 -->
+                <div class="list-group">
+                    <h3 style="margin-bottom: 1rem; color: #4a90e2;">Khối 12</h3>
+                    <div class="list-item">12C1 <span class="badge">0 học sinh</span></div>
+                    <div class="list-item">12C2 <span class="badge">0 học sinh</span></div>
+                    <div class="list-item">12C3 <span class="badge">0 học sinh</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
