@@ -32,4 +32,9 @@ public class WebController {
     public String homePage() {
         return "home";
     }
+
+    @GetMapping("/category")
+    public String categoryPage() {
+        return "category";
+    }
 }
